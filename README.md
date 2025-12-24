@@ -25,7 +25,7 @@ $HOME/Extra-Tools/firefox/firefox
 ```
 Script marked executable:
 ```
-chmod +x firefox-analyze.sh
+chmod +x url-analyzer.sh
 ```
 Make Directory to store Packet Captures:
 ```
