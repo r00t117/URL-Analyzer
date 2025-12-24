@@ -1,6 +1,10 @@
 # URL-Analyzer
 A small, purpose-built launcher for safely analyzing suspicious URLs and files using an isolated Firefox 52 environment. The script wraps Firefox in Firejail, optionally cuts network access, and captures traffic to a PCAP when needed, making it easy to inspect browser behavior without contaminating the host. Designed for quick, repeatable analysis with minimal setup.
 
+## Disclaimer:
+- I still recommend that you run this in a isoloated VM with a clean snapshot before hand. I would not rely on Firejail as a complete safe isolation. Then just recvert the snapshot VM afterwards.
+PS: Don't forget to harden your VM and isolate it from your host!
+
 1. Launches an isolated Firefox 52 instance for analyzing suspicious URLs or files.
 2. Allows choosing between online analysis with full network access or a fully offline sandbox.
 3. Captures all network traffic to a timestamped PCAP for later inspection.
